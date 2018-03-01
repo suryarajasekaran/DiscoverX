@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Hello World User! Site Title</title>
+  </head>
+  <body>
+    <h1>Hello World User!</h1>
+    <input id="firstname"type="text" name="firstname">
+    <input id="lastname" type="text" name="lastname">
+    <button id="submit" type="button">Submit!</button>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ url_for('static',filename='js/user.js') }}"></script>
+  </body>
+</html>
