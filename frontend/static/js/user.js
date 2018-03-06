@@ -1,12 +1,18 @@
 document.getElementById("submit").onclick = function () {
-        var firstname = document.getElementById("firstname").value;
-        var lastname = document.getElementById("lastname").value;
+        var username = document.getElementById("UserName").value;
+        var agentname = document.getElementById("AgentName").value;
+         var title = document.getElementById("TicketTitle").value;
+          var desc = document.getElementById("TicketDescription").value;
+           var status = document.getElementById("TicketStatus").value;
         $.ajax({
                 url: "http://0.0.0.0:7771/user",
                 type: "POST",
                 data: JSON.stringify({
-                    "firstname": firstname,
-                    "lastname" : lastname,
+                    "UserName": username,
+                    "AgentName" : agentname,
+                    "TicketTitle" : title,
+                    "TicketDescription" : desc,
+                     "TicketStatus" : status,
                 }),
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",

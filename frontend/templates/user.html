@@ -5,8 +5,11 @@
   </head>
   <body>
     <h1>Hello World User!</h1>
-    <input id="firstname"type="text" name="firstname">
-    <input id="lastname" type="text" name="lastname">
+    <p> Your Name : </p><input id="UserName"type="text" name="UserName">
+    <p> Agent's Name : </p><input id="AgentName" type="text" name="AgentName">
+    <p> Ticket Title : </p><input id="TicketTitle"type="text" name="TicketTitle">
+    <p> Ticket Description : </p><input id="TicketDescription" type="text" name="TicketDescription">
+    <p> Ticket Status : </p><input id="TicketStatus"type="text" name="TicketStatus">
     <button id="submit" type="button">Submit!</button>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="{{ url_for('static',filename='js/user.js') }}"></script>

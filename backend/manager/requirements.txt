@@ -1,0 +1,12 @@
+Flask
+Jinja2
+Werkzeug
+certifi
+chardet
+gunicorn
+requests==2.2.1
+googlemaps
+flask_restful
+flask
+pymongo
+flask_cors

@@ -17,5 +17,9 @@ def home():
 def user():
     return render_template("user.html")
 
+@app.route('/manager')
+def manager():
+    return render_template("manager.html")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=7772, debug=True)
