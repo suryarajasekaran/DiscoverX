@@ -1,5 +1,5 @@
 #!/bin/bash
 
 yum update
-yum install pip
+yum install python-pip
 pip install virtualenv
