@@ -8,14 +8,14 @@ import os
 class DataAccess(object):
 
     def __init__(self):
-        mongodb_url = "mongodb://heroku_vl4kdnfm:pgsdq90hk47vef4nboqha2sklk@ds251548.mlab.com:51548/heroku_vl4kdnfm"
+        mongodb_url = "mongodb://ec2-18-144-12-29.us-west-1.compute.amazonaws.com:27017"
         self.mongodb_obj = MongoDB(url=mongodb_url)
 
 class MongoDB(object):
 
     def __init__(self, url):
         self.client = pymongo.MongoClient(url)
-        self.default_db = self.client.get_default_database()
+        self.default_db = self.client.connection['discoverx']
         self.collection_ticket = self.default_db["ticket"]
 
     @staticmethod #converts bson to json
