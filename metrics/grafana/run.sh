@@ -13,7 +13,7 @@ curl -X POST \
   -d '{
   "name":"telegraf",
   "type":"influxdb",
-  "url":"http://localhost:8086",
+  "url":"http://ec2-13-56-223-214.us-west-1.compute.amazonaws.com:8086",
   "access":"direct",
   "basicAuth":false,
   "database":"telegraf"
