@@ -10,13 +10,13 @@ app = Flask(__name__)
 CORS(app)
 api = Api(app)
 
-@app.route('/ping')
+@app.route('/a/ping')
 @cross_origin(origin='*')
 def ping():
     return json.dumps({"status": True})
 
 
-@app.route('/agent', methods=['GET','POST'])
+@app.route('/a/agent', methods=['GET','POST'])
 @cross_origin(origin='*')
 def agent():
     if request.method == 'GET':
