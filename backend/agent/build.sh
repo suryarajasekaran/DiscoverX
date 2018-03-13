@@ -1,4 +1,4 @@
 #!/bin/sh
 
 BASEDIR=$(dirname "$0")
-docker build -t manager:latest -f "$BASEDIR/Dockerfile" $BASEDIR
+docker build -t agent:latest -f "$BASEDIR/Dockerfile" $BASEDIR
