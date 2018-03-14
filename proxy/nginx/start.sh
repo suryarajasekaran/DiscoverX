@@ -1,5 +1,5 @@
 #!/bin/bash
 
 service nginx stop
-cp haproxy.cfg /etc/haproxy/nginx.conf
+cp nginx.conf /etc/nginx/nginx.conf
 service nginx start
