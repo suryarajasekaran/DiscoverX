@@ -1,3 +1,3 @@
 #!/bin/sh
 
-service consultemplate start
+consul-template --config=consul-template.conf
