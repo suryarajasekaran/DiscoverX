@@ -1,8 +1,3 @@
 #!/bin/bash
 
-wget https://releases.hashicorp.com/consul-template/0.12.0/consul-template_0.12.0_linux_amd64.zip
-unzip consul-template_0.12.0_linux_amd64.zip
-sudo chmod a+x consul-template
-sudo mv consul-template /usr/bin/consul-template
-rm -rf consul-template_0.12.0_linux_amd64.zip
-rm -rf consul-template_0.12.0_linux_amd64
+docker run -d --net=host -p 8500:8500 -p 8600:8600 -p 8300-8302:8300-8302 -e 'CONSUL_LOCAL_CONFIG={"leave_on_terminate": true}' consul agent --retry-join=54.193.13.172
