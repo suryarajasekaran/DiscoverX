@@ -55,6 +55,7 @@
       "steppedLine": false,
       "targets": [
         {
+          "$$hashKey": "object:471",
           "groupBy": [
             {
               "params": [
@@ -106,7 +107,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS1 User Rx Bytes",
+      "title": "PaaS1 Agent Rx Bytes",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -219,7 +220,7 @@
               "condition": "AND",
               "key": "container_name",
               "operator": "=",
-              "value": "user"
+              "value": "agent"
             }
           ]
         }
@@ -227,7 +228,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS2 User Rx Bytes",
+      "title": "PaaS2 Agent Rx Bytes",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -340,7 +341,7 @@
               "condition": "AND",
               "key": "container_name",
               "operator": "=",
-              "value": "user"
+              "value": "agent"
             }
           ]
         }
@@ -348,7 +349,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS3 User Rx Bytes",
+      "title": "PaaS3 Agent Rx Bytes",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -461,7 +462,7 @@
               "condition": "AND",
               "key": "container_name",
               "operator": "=",
-              "value": "user"
+              "value": "agent"
             }
           ]
         }
@@ -469,7 +470,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS1 User Memory Usage %",
+      "title": "PaaS1 Agent Memory Usage %",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -582,7 +583,7 @@
               "condition": "AND",
               "key": "container_name",
               "operator": "=",
-              "value": "user"
+              "value": "agent"
             }
           ]
         }
@@ -590,7 +591,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS2 User Memory Usage %",
+      "title": "PaaS2 Agent Memory Usage %",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -703,7 +704,7 @@
               "condition": "AND",
               "key": "container_name",
               "operator": "=",
-              "value": "user"
+              "value": "agent"
             }
           ]
         }
@@ -711,7 +712,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS3 User Usage %",
+      "title": "PaaS3 Agent Usage %",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -798,7 +799,7 @@
           "measurement": "docker_container_cpu",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT mean(\"usage_percent\") FROM \"docker_container_cpu\" WHERE (\"host\" = 'ip-172-31-20-197' AND \"container_name\" = 'user') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "query": "SELECT mean(\"usage_percent\") FROM \"docker_container_cpu\" WHERE (\"host\" = 'ip-172-31-20-197' AND \"container_name\" = 'agent') AND $timeFilter GROUP BY time($__interval) fill(null)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -826,7 +827,7 @@
               "condition": "AND",
               "key": "container_name",
               "operator": "=",
-              "value": "user"
+              "value": "agent"
             }
           ]
         }
@@ -834,7 +835,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS1 User CPU Usage %",
+      "title": "PaaS1 Agent CPU Usage %",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -920,7 +921,7 @@
           ],
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT mean(\"usage_percent\") FROM \"docker_container_cpu\" WHERE (\"host\" = 'ip-172-31-25-112' AND \"container_name\" = 'user') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "query": "SELECT mean(\"usage_percent\") FROM \"docker_container_cpu\" WHERE (\"host\" = 'ip-172-31-25-112' AND \"container_name\" = 'agent') AND $timeFilter GROUP BY time($__interval) fill(null)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -944,7 +945,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS2 User CPU Usage %",
+      "title": "PaaS2 Agent CPU Usage %",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -1030,7 +1031,7 @@
           ],
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT mean(\"usage_percent\") FROM \"docker_container_cpu\" WHERE (\"host\" = 'ip-172-31-31-42' AND \"container_name\" = 'user') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "query": "SELECT mean(\"usage_percent\") FROM \"docker_container_cpu\" WHERE (\"host\" = 'ip-172-31-31-42' AND \"container_name\" = 'agent') AND $timeFilter GROUP BY time($__interval) fill(null)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -1054,7 +1055,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS3 User CPU Usage %",
+      "title": "PaaS3 Agent CPU Usage %",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -1125,7 +1126,7 @@
     ]
   },
   "timezone": "",
-  "title": "User",
+  "title": "Agent",
   "uid": "IyjLjEgiz",
-  "version": 2
+  "version": 4
 }
