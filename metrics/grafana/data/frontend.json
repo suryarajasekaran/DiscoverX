@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 4,
+  "id": 3,
   "links": [],
   "panels": [
     {
@@ -99,7 +99,7 @@
               "condition": "AND",
               "key": "container_name",
               "operator": "=",
-              "value": "user"
+              "value": "frontend"
             }
           ]
         }
@@ -1127,6 +1127,5 @@
   },
   "timezone": "",
   "title": "Frontend",
-  "uid": "IyjLjEgiz",
   "version": 4
 }

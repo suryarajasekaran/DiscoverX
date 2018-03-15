@@ -99,7 +99,7 @@
               "condition": "AND",
               "key": "container_name",
               "operator": "=",
-              "value": "user"
+              "value": "manager"
             }
           ]
         }
@@ -107,7 +107,7 @@
       "thresholds": [],
       "timeFrom": null,
       "timeShift": null,
-      "title": "PaaS1 User Rx Bytes",
+      "title": "PaaS1 Manager Rx Bytes",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -1126,7 +1126,6 @@
     ]
   },
   "timezone": "",
-  "title": "User",
-  "uid": "IyjLjEgiz",
+  "title": "Manager"
   "version": 4
 }
