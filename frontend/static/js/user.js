@@ -5,7 +5,7 @@ document.getElementById("submit").onclick = function () {
           var desc = document.getElementById("TicketDescription").value;
            var status = document.getElementById("TicketStatus").value;
         $.ajax({
-                url: "http://0.0.0.0:7771/user",
+                url: "/u/user",
                 type: "POST",
                 data: JSON.stringify({
                     "UserName": username,
