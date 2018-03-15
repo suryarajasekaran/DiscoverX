@@ -4,20 +4,20 @@ from flask_restful import Api
 app = Flask(__name__)
 api = Api(app)
 
-@app.route('/ping')
+@app.route('/f/ping')
 def ping():
     return json.dumps({"status":True})
 
-@app.route('/')
-@app.route('/home')
+@app.route('/f/')
+@app.route('/f/home')
 def home():
     return render_template("home.html")
 
-@app.route('/user')
+@app.route('/f/user')
 def user():
     return render_template("user.html")
 
-@app.route('/manager')
+@app.route('/f/manager')
 def manager():
     return render_template("manager.html")
 

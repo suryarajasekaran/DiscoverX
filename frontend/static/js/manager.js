@@ -1,7 +1,7 @@
 //document.getElementById("submitMan").onclick = function () {
 
         $.ajax({
-                url: "http://0.0.0.0:7773/manager",
+                url: "/m/manager",
                 type: "GET",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
