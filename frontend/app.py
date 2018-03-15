@@ -7,7 +7,7 @@ api = Api(app)
 
 @app.route('/f/ping')
 def ping():
-    return json.dumps({"status":True})
+    return json.dumps({"status": True})
 
 @app.route('/f/')
 @app.route('/f/home')
